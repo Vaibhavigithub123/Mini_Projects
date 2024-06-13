@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #ffff;
+   
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient( #4d4aa2, #040408);
+}
+header{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(135, 133, 133);
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+ul li a{
+    padding: 2px 15px;
+    margin: 0 5px;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.logo{
+    padding: 2px 15px;
+}
+.signup{
+    background-color: rgb(255,255,255);
+    color: #000000;
+    padding: 2px 15px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.signup:hover{
+    background-color:#7d7d7d;
+    color: #ffff;
+}
+main{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px 150px;
+    flex-wrap: wrap;
+
+   /* Another way*/
+    /* display: flex;
+    flex: 1;
+    width: auto;
+    height: 90vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 150px; */
+
+}
+main h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+main p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31.5px;
+    margin: 30px 0px;
+}
+.content-left{
+    flex: 1;
+}
+.content-mid{
+    flex: 2;
+}
+.content-right{
+    flex:1;
+}
+.btn{
+    padding: 15px 30px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: #000000;
+    font-weight: 700;
+}
+.btn:hover{
+    background: none;
+    color: #ffff;
+    border: 2px solid white;
+}
+.merc{
+    max-width: 500px;
+    height: auto;
+    animation: drop 1.5s ease;
+}
+@keyframes drop {
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media screen and (max-width:654px){
+    ul li a{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 10px;
+        margin-top: 70px;
+        
+    }
+    
+    main p{
+        font-size: 14px;
+        line-height: 31.5px;
+        /* margin: 30px 0px; */
+    }
+    .content-right{
+        align-self: center;
+    }
+}
+@media screen and (min-width:654px) and (max-width:1114px){
+    ul{
+        display: flex;
+        list-style: none;
+    }
+    ul li a{
+        display: flex;
+    }
+    main{
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    
+}
+@media screen and(min-width:1114px){
+    main{
+        gap: 100px;
+        margin-top: 30px;
+    }
+    .content-left{
+        flex: 2;
+    }
+    main h2{
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+    main p {
+        font-size: 14px;
+       
+    }
+}
