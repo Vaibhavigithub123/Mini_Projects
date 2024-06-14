@@ -1,0 +1,73 @@
+<!Doctype html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Key logger</title>
+        <style>
+            body{
+                /* background-color: rgb(120, 120, 120); */
+                background-color: #27282c;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 80px auto;
+            }
+            #log, #state{
+               
+                width: 500px;
+                height: 50px;
+                border: 1px solid black;
+                padding: 10px;
+                border-radius: 10px;
+                margin-top: 35px;
+                font-size: 20px;
+                text-align: center;
+                color: #ffff;
+            }
+            .btn-container{
+                display: flex;
+                gap: 10px;
+                
+            }
+            button{
+                background-color: #ffff;
+                font-size: 20px;
+                text-align: center;
+                padding: 10px 20px;
+                margin-top: 20px;
+                margin-right: 10px;
+                cursor: pointer;
+                transition: 0.5s;
+                border-radius: 15px;
+            }
+            button:hover{
+                background-color: transparent;
+                border: 1px solid white;
+                border-radius: 15px;
+                color: #ffff;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="border: 1px solid black; border-radius: 10px; font-size: 20px; padding: 15px; background-color: #3177a3;">Key logger</h1>
+            <p style="color: #ffff;">Please press any key....</p>
+
+           <div class="btn-container">
+            <button id="start-btn">Start logging keypress</button>
+            <button id="stop-btn">Stop logging keypress</button>
+           </div>
+
+           <div class="btn-container">
+            <div id="log" style="background-color: #ffa500;;"></div>
+            <div id="state" style="background-color: #666667;"></div>
+           </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html> 
+
