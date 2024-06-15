@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url('https://www.reviewofreligions.org/wp-content/uploads/2022/12/shutterstock_1165332937-1024x683.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    animation: dot 3s linear normal;
+}
+h1{
+    font-size: 60px;
+    font-weight: normal;
+    color: antiquewhite;
+    margin: -150px 0px 40px;
+    letter-spacing: 10px;
+}
+.countdown{
+    display: flex;
+    gap: 10px;
+    transform: scale(2);
+}
+.time{
+    margin-top: 15px;
+    padding: 17px 10px 0px 10px;
+}
+.time h2{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+}
+small{
+    color: aliceblue;
+}
+@keyframes dot {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }  
+}
+
+@media screen and (max-width:600px) {
+    .countdown{
+        display: flex;
+        transform: scale(2);
+    }
+    .time h2{
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 1;
+        color: rgb(255, 255, 255);
+    }
+}
