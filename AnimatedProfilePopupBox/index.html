@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfilePopupBox</title>
+    <link rel="stylesheet" href="style.css">
+
+     <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="photo-gallery-1.jpg" alt=""/>
+        </div>
+        <span>Michela stone</span>
+        <p>Software Engineer</p>
+        <div class="button">
+            <i class='bx bxs-envelope'></i>
+            <button id="btn" onclick="openPopup()"">Hire me</button>
+        </div>  
+        
+        
+        <div class="wrapper" id="wrapper">
+            <div class="minidiv">
+                <div class="headSection">
+                    <div class="profile">
+                        <img src="photo-gallery-1.jpg" alt=""/>
+                    </div> 
+                    <div>
+                        <span>Michela stone</span>
+                        <p>Software Engineer</p>
+                    </div>
+                </div>
+                <form action="#">
+                    <textarea placeholder="Enter your message"></textarea>
+                    <div class="buttondiv">
+                        <button class="cancel" onclick="closePopup()">Cancel</button>
+                        <button class="send">Send</button>
+                    </div>
+                </form>
+                
+            </div>
+    
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
