@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Roboto", sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    /* display: flex; */
+    padding: 60px;
+    background-color: #ededed;
+    transition: 0.5s;
+}
+header,ul{
+    display: flex;
+}
+header{
+    width: 90%;
+    height: 10vh;
+    margin: 30px auto;   
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    list-style: none;  
+    padding: 0px 70px;
+}
+ul > li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+.logo{
+    text-decoration: none;
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.logo span{
+    color: orange;
+    font-size: 2em;
+}
+.presentation{
+    width: 90%;
+    min-height: 65vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.introduction{
+    flex: 1;
+}
+.introduction h2{
+    font-size: 5.5em;
+    color: #333;
+    transition: 0.5s;
+}
+h2 span{
+    color: orange;
+}
+.introduction p{
+    color: #666;
+    font-size: 1.2em;
+    transition: 0.5s;
+    margin: 10px 0px;
+}
+.introduction button{
+    background-color: orange;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 1.25em;
+    margin-right: 20px;
+    border-radius: 10px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.introduction #chat{
+    background-color: transparent;
+    color: #333;
+}
+.introduction #chat:hover{
+    border: 1px solid black;
+}
+.cover{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.cover img{
+    height: 50vh;
+    filter: drop-shadow(0px 5px 3px  black);
+    animation: drop 1.5s ease;
+    border-radius: 15px;
+}
+@keyframes drop {
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.bottom{
+    width: 90%; 
+    min-height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom img{
+    width: 50px;
+    height: 50px;
+    background-color: #cac9c9;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.banner.dark-theme{
+    background-color: #333;
+}
+.bottom img:nth-child(2),
+.banner.dark-theme .bottom img:nth-child(1){
+    display: none;
+}
+.banner.dark-theme .bottom img:nth-child(2){
+    display: block;
+}
+.banner.dark-theme .bottom img{
+    background-color: #444; 
+    padding: 10px;
+    border-radius: 50%;
+}
+.banner.dark-theme header .logo,
+.banner.dark-theme ul>li a,
+.banner.dark-theme .introduction h2,
+.banner.dark-theme .presentation #chat{
+    color: #fff;
+}
+/* .img{
+    flex: 1;
+} */
