@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(215, 215, 215, 0.933);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: blue;
+    font-weight: bold;
+    font-style: italic;
+}
+.main{
+    width: 770px;
+    padding: 35px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
+.main .input-field{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #bfbfbf;
+    outline: none;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+.main .input-field:focus{
+    border: 2px solid rgba(43, 85, 236, 0.851);
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    background-color: rgba(43, 85, 236, 0.851);
+    border-radius: 50%;
+}
+.left{
+    position: absolute;
+    top: -150px;
+    right: -150px;
+}
+.right{
+    position: absolute;
+    bottom: -180px;
+    left: -130px; 
+}
+.main .content-box{
+    padding: 13px 20px 0 10px;
+    border-radius: 10px;
+    border: 1px solid #bfbfbf;
+}
+.content-box .content{
+    margin-top: 17px;
+    display: flex;
+    padding: 12px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #bfbfbf;
+}
+.content .result-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+}
+.result-details li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.result-details p{
+    font-size: 16px;
+}
+.content button{
+    border: none;
+    outline: none;
+    background-color: rgba(43, 85, 236, 0.851);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+.content button:active{
+    transform: scale(0.97);
+}
+.typing-text p span.active{
+    color: blue;
+    font-weight: 800;
+}
+.typing-text p  span.correct{
+    color: green;
+}
+.typing-text p  span.Incorrect{
+    color: #ff0000;
+    outline: 1px solid #fff; 
+}
