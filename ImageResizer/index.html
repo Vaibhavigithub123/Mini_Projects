@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resize">
+            <input type="file" class="resize-file" style="margin-left: 100px;" >
+        <div class="dimensions">
+            
+            <div class="col-width">
+                <label>Width :</label>
+                <input type="text" class="resize-input-width" value="0">
+            </div>
+            
+            <div class="col-height">
+                <label>Height :</label>
+                <input type="text" class="resize-input-height" value="0">
+            </div>
+
+            <label>
+                <input type="checkbox" class="resize-aspect" checked>
+                Keep Aspect Ratio
+            </label>
+        </div>
+        <canvas class="resize-canvas" width="500" height="500"></canvas>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
