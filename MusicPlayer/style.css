@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #204B38;
+}
+.music-player{
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 40px 100px rgba(255,255,255,0.1);
+    overflow: hidden;
+    padding: 30px;
+    color: #d5eed5;
+}
+.music-name, .artist-name{
+    text-align: center;
+    text-transform: capitalize;
+}
+.music-name{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.artist-name{
+    font-size: 20px;
+}
+.disk{
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-image: url('images/fallingdown.jpg');
+    background-size: cover;
+    margin: 40px auto;
+    box-shadow: 0 0 0 10px rgba(247, 243, 243, 0.08);
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+.disk.play{
+    animation-play-state: running;
+}
+.slider{
+    width: 100%;
+    position: relative;
+}
+.range-bar{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #7fc8a9;
+    cursor: pointer;
+}
+.range-bar::-webkit-slider-thumb{
+    width: 10px;
+    height: 35px;
+    border-radius: 50%;
+    box-shadow: -400px 0 0 400px #d5eebb;
+}
+.current-time, .song-duration{
+    font-size: 14px;
+    font-weight: 600;
+}
+.song-duration{
+    position: absolute;
+    right: 0;
+}
+.controls{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.play-btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #d5eebb;
+    cursor: pointer;
+    border:none;
+}
+.play-btn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #5f7a61;
+    transition: .5s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.play-btn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+.play-btn.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+.play-btn.pause span:nth-child(1){
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+.play-btn.pause{
+    animation: pulse 2s linear infinite;
+}
+@keyframes pulse {
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 0 5PX rgba(255,255,255,0.1);
+    }
+    100%{
+        box-shadow: 0 0 0 5px rgba(55,255,255,0.4);
+    }
+    
+}
+.btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
