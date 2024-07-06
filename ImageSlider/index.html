@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery">
+        <div>
+            <span><img src="images/image-1.png" alt=""></span>
+            <span><img src="images/image-2.png" alt=""></span>
+            <span><img src="images/image-3.png" alt=""></span>
+        </div>
+
+        <div>
+            <span><img src="images/image-4.png" alt=""></span>
+            <span><img src="images/image-5.png" alt=""></span>
+            <span><img src="images/image-6.png" alt=""></span>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content:flex-start; gap: 20px;  margin: 20px;">
+        <svg id="prevBtn" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+        </svg>
+        
+        <svg id="nextBtn"  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/>
+          </svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
