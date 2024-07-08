@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eau de parfum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="perfume-card">
+        <div class="slider">
+            <img src="images/channel.jpg" alt="">
+            <img src="images/gucci1.jpg" alt="">
+            <img src="images/armani.jpg" alt="">
+            <img src="images/Jo-malonejpg.jpg" alt="">
+            <img src="images/VSA.jpg" alt="">
+            <img src="images/Dior.jpg" alt="">
+            <img src="images/BP.jpg" alt="">
+            <img src="images/versachejpg.jpg" alt="">
+        </div>
+        <!-- <div class="slider">
+            <img src="images/channel.jpg" alt="">
+            <img src="images/gucci1.jpg" alt="">
+            <img src="images/armani.jpg" alt="">
+            <img src="images/Jo-malonejpg.jpg" alt="">
+            <img src="images/VSA.jpg" alt="">
+            <img src="images/Dior.jpg" alt="">
+            <img src="images/BP.jpg" alt="">
+            <img src="images/versachejpg.jpg" alt="">
+        </div> -->
+        <!-- without js approch ⬆ -->
+
+    </div>
+    <script>
+        var card = document.querySelector('.perfume-card')
+        var copy = document.querySelector('.slider').cloneNode(true);
+        card.appendChild(copy)
+    </script>
+</body>
+</html>
