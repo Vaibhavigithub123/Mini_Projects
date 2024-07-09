@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Radley", serif;
+    font-weight: 400;
+}
+.front-page{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    clip-path: circle(5%);
+}
+.front-page video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.intro-text, .music-note{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.blend{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+}
+.title {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+.sub-title{
+    font-size: 1.5rem;
+}
+.second-page{
+    height: 100vh;
+}
