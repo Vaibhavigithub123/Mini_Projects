@@ -14,6 +14,11 @@ The primary objective is to collect the most pairs of matching cards.
 - document.querySelector
 - createElement
 
+## CSS properties to focus on?
+- grid properties
+- 3D Effect Animation Properties - perspective
+- Position properties - relative, absolute
+
 ## Rules of Memory Game
 - The game will start by total 6 Player Lives.
 - You will start by flipping over one card.
