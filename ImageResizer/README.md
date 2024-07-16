@@ -1,4 +1,4 @@
-#Image Resizer app
+# Image Resizer app
 
 An easy-to-use image resizer app. Built using JavaScript, HTML, and CSS, this app allows users to quickly resize images to their desired dimensions, making it perfect for web developers, designers, and anyone needing to adjust image sizes for various purposes.
 
