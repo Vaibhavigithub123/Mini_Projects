@@ -21,8 +21,8 @@ This game great as it shows how to drag and drop elements in JavaScript. This is
 - continue
 
 ### Rules of the game
--Match three or more candies of the same color in a row, either horizontally or vertically, to clear them from the board.
--Complete the level's goals within a limited number of moves or a time limit.
--Swap adjacent candies to form a row or column of at least three matching candies.Swapping is only allowed if it results in a match.
+- Match three or more candies of the same color in a row, either horizontally or vertically, to clear them from the board.
+- Complete the level's goals within a limited number of moves or a time limit.
+- Swap adjacent candies to form a row or column of at least three matching candies.Swapping is only allowed if it results in a match.
 - Matches of three candies clear them from the board.
--Matches of four candies can also clear them from the board.
+- Matches of four candies can also clear them from the board.
